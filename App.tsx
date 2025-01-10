@@ -4,13 +4,15 @@ import React from 'react';
 import {HelloWorldScreen} from './src/presentation/screens/HelloWorldScreen';
 import {CounterScreen} from './src/presentation/screens/CounterScreen';
 import {PaperProvider} from 'react-native-paper';
+import {CounterM3Screen} from './src/presentation/screens/CounterM3Screen';
 
 export const App = () => {
   return (
     <PaperProvider>
       <SafeAreaView style={styles.area}>
         {/* <HelloWorldScreen name="Gerardo de León" /> */}
-        <CounterScreen />
+        {/* <CounterScreen /> */}
+        <CounterM3Screen />
       </SafeAreaView>
     </PaperProvider>
   );
