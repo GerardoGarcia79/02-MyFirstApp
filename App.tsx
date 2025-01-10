@@ -6,9 +6,15 @@ import {CounterScreen} from './src/presentation/screens/CounterScreen';
 import {PaperProvider} from 'react-native-paper';
 import {CounterM3Screen} from './src/presentation/screens/CounterM3Screen';
 
+import IonIcon from 'react-native-vector-icons/Ionicons';
+
 export const App = () => {
   return (
-    <PaperProvider>
+    <PaperProvider
+      settings={{
+        // eslint-disable-next-line react/no-unstable-nested-components
+        icon: props => <IonIcon {...props} />,
+      }}>
       <SafeAreaView style={styles.area}>
         {/* <HelloWorldScreen name="Gerardo de León" /> */}
         {/* <CounterScreen /> */}
